@@ -1,0 +1,108 @@
+body {
+    background-color: #e8e2cf;
+    color:#411b32;
+}
+
+.oculto {
+    display: none;
+}
+#mensagemErro {
+    color: #7c626c;
+    margin-top: 10px;
+}
+
+.questao {
+    border: 1px solid #411b32;
+    padding: 25px;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.questao h2 {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    background: #e8e2cf;
+    padding: 0 15px;
+}
+
+button {
+    background-color: #411b32;
+    color: #e8e2cf;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 15px 0;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #e8e2cf;
+    color: #411b32;
+}
+
+input {
+    border: 1px solid #411b32;
+    border-radius: 5px;
+    color: #411b32;
+    background-color: #f5f1e8;
+}
+
+select {
+    border: 1px solid #411b32;
+    background-color: #f5f1e8;
+    border-radius: 5px;
+    color: #411b32;
+}
+
+img {
+    width: 300px;
+    
+}
+
+input[type="checkbox"] {
+    accent-color: #411b32;
+}
+
+.sele option:checked {
+    background-color: #602347;
+    color: #e8e2cf;
+}
+
+.sele option:hover {
+    background-color: #602347;
+    color: #e8e2cf;
+}
+
+/* Questão 11 -> letra c)*/
+
+h1 {
+    text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;   
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.erros {
+  width: 100%;            
+  text-align: center;     
+  margin-top: 20px;
+}
+

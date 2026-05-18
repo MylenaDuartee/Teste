@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <title>Atividade</title>
+    <script src = "script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="questao">
+
+        <h2>Questão 01</h2>
+        <button id="botaoErro">Mostrar Erro</button>
+        <div id="mensagemErro" class="oculto">Por favor, preencha o campo</div>
+    
+    </div>
+    
+    <div class="questao">
+
+        <h2>Questão 02</h2>
+        <label for="caixaDeTexto">Digite o texto: </label>
+        <input type="text" id="caixaDeTexto">
+        <button id="botaoExibir">Exibir</button>
+        <div id="conteudo"></div>
+
+    </div>
+
+    <div class="questao">
+
+        <h2>Questão 03</h2>
+        <label for="NumInterecao">Digite o número de interação: </label>
+        <input type="text" id="interacao"> <br><br>
+
+        <label for="NumVisualizacao">Digite o número de visualização: </label>
+        <input type="text" id="visualizacao"> <br>
+        
+        <button id="calcular">Calcular engajamento</button>
+
+        <div id="resultadoEngaja"></div>
+
+    </div>
+
+    <div class="questao">
+
+        <h2>Questão 04</h2>
+        <input type="file" id="uploadImagem" accept="image/*"> <br>
+        <button id="carregarImg">Carregar imagem</button>
+        <div id="resultadoUpload"></div>
+    
+    </div>
+
+    <div class="questao">
+
+        <h2>Questão 05</h2>
+        <label>
+            Selecione uma cor da logo Arirang:
+            <select name="logoArirang" id="arirang">
+
+                <option value="">Selecione um cor</option>
+                <option value="https://raw.githubusercontent.com/MylenaDuartee/Programa-o-para-internet/refs/heads/main/imagens/arirang/preto%20e%20vermelho.png">Preto e vermelho</option>
+                <option value="https://raw.githubusercontent.com/MylenaDuartee/Programa-o-para-internet/refs/heads/main/imagens/arirang/vermelho%20e%20branco.png">Vermelho e branco</option>
+                <option value="https://raw.githubusercontent.com/MylenaDuartee/Programa-o-para-internet/refs/heads/main/imagens/arirang/branco%20e%20preto.png">Branco e preto</option>
+
+            </select>
+        </label><br><br>
+
+        <img id="resultadoAri"></img>
+
+    </div>
+
+    <div class="questao">
+        <h2>Questão 06</h2>
+
+        <div>
+            <input type="checkbox"id="facebook" name="redesSociais" value="Facebook">
+            <label for="facebook">Facebook</label>
+        </div>
+        <div>
+            <input type="checkbox" id="twitter" name="redesSociais" value="Twitter">
+            <label for="twitter">Twitter</label>
+        </div>
+        <div>
+            <input type="checkbox" id="instagram" name="redesSociais" value="Instagram">
+            <label for="instagram">Instagram</label>
+        </div>
+        <div>
+            <input type="checkbox" id="linkedin" name="redesSociais" value="LinkedIn">
+            <label for="linkedin">LinkedIn</label>
+        </div>
+        <div>
+            <input type="checkbox" id="tiktok" name="redesSociais" value="TikTok">
+            <label for="tiktok">TikTok</label>
+        </div>
+
+        <button type="button" id="enviarBtn">Enviar Seleção</button>
+        <div id="redesSelecionadas"></div>
+
+    </div>
+
+    <div class="questao">
+        <h2>Questão 07</h2>
+
+        <label for="Hashtag">Digite a sua hashtag: </label>
+        <input type="text" id="hashtag">
+        <button id="enviarHash">Enviar</button><br>
+        <div id="resultadoHash"></div><br>
+        <select id="lista" size="5" class="sele">
+            
+        </select> <br>
+        <button id="excluirHash">Excluir hashtag</button>
+        <p id="hashSelecionada"></p>
+
+    </div>
+
+    <div class="questao">
+        <h2>Questão 10</h2>
+
+        <h1>Mover Ativos Financeiros entre Carteiras</h1>
+        <div class="container">
+            <div  class="coluna">
+                <label for="ativosDisponiveis">Ativos Disponíveis:</label>
+                <select class="sele" id="ativosDisponiveis" size="10" multiple>
+                    <option value="AAPL">Apple (AAPL)</option>
+                    <option value="GOOGL">Google (GOOGL)</option>
+                    <option value="AMZN">Amazon (AMZN)</option>
+                    <option value="MSFT">Microsoft (MSFT)</option>
+                    <option value="TSLA">Tesla (TSLA)</option>
+                    <option value="BRK.B">Berkshire Hathaway (BRK.B)</option>
+                    <option value="FB">Meta (FB)</option>
+                    <option value="V">Visa (V)</option>
+                    <option value="JNJ">Johnson & Johnson (JNJ)</option>
+                    <option value="WMT">Walmart (WMT)</option>
+                </select>
+            </div>
+
+            
+            <div class="buttons">
+                <button id="moverParaDireita">&larr;</button>
+                <button id="moverParaEsquerda">&rarr;</button>
+            </div>
+            
+            <div class="coluna">
+                <label for="carteiraInvestimentos">Carteira de Investimentos:</label>
+                <select class="sele" id="carteiraInvestimentos" size="10" multiple></select>
+            </div>
+
+            <div class="erros">    
+                <div id="erroMoverEsquerda"></div>
+                <div id="erroMoverDireita"></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
